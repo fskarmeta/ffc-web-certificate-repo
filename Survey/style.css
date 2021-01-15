@@ -1,0 +1,695 @@
+:root {
+  font: 20px/1.2 "Mulish", sans-serif;
+}
+
+body,
+body * {
+  margin: unset;
+  box-sizing: border-box;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+/* Main Grid */
+
+.container {
+  height: 200vh;
+  display: grid;
+  box-sizing: border-box;
+  gap: 0px;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 2% 5% 20% 5% 5% 60% 18% 2%;
+  grid-template-areas:
+    "m1 m2 m2 m3"
+    "m1 h p1 m3"
+    "m1 s1 p1 m3"
+    "m1 p2 s2 m3"
+    "m1 p2 sa m3"
+    "m1 p2 sl m3"
+    "m1 f f m3"
+    "m1 m4 m4 m3";
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: 200vh;
+    display: grid;
+    box-sizing: border-box;
+    gap: 0px;
+    grid-template-columns: auto;
+    grid-template-rows: 1% 7% 30% 5% 5% 65% 20% 1%;
+    grid-template-areas:
+      "m2 m2"
+      "h p1"
+      "s1 p1"
+      "p2 s2"
+      "p2 sa"
+      "p2 sl"
+      "f f"
+      "m4 m4";
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: 200vh;
+    display: grid;
+    box-sizing: border-box;
+    gap: 0px;
+    grid-template-columns: 2.5% 95% 2.5%;
+    grid-template-rows: 1% 8% 40% 30% 80% 4% 8% 70% 25% 1%;
+    grid-template-areas:
+      "m1 m2 m3"
+      "m1 h m3"
+      "m1 p1 m3"
+      "m1 s1 m3"
+      "m1 p2 m3"
+      "m1 s2 m3"
+      "m1 sa m3"
+      "m1 sl m3"
+      "m1 f m3"
+      "m1 m4 m3";
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    height: 200vh;
+    display: grid;
+    box-sizing: border-box;
+    gap: 0px;
+    grid-template-columns: 2.5% 95% 2.5%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "m1 m2 m3"
+      "m1 h m3"
+      "m1 p1 m3"
+      "m1 s1 m3"
+      "m1 p2 m3"
+      "m1 s2 m3"
+      "m1 sa m3"
+      "m1 sl m3"
+      "m1 f m3"
+      "m1 m4 m3";
+  }
+
+  .p1 img {
+    object-fit: fill;
+  }
+
+  .p2 img2 {
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 460px) {
+  .sa {
+    display: grid;
+
+    padding: 5rem 5rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .s2 {
+    display: grid;
+
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .a,
+  .b {
+    display: grid;
+
+    height: 840px;
+  }
+}
+
+/* Grid Margins */
+
+.m1 {
+  grid-area: m1;
+  background-color: #5a6b5a;
+}
+
+.m2 {
+  grid-area: m2;
+  background-color: #5a6b5a;
+}
+
+.m3 {
+  grid-area: m3;
+  background-color: #5a6b5a;
+}
+
+.m4 {
+  grid-area: m4;
+  background-color: #5a6b5a;
+}
+
+/* Heading */
+
+.h {
+  grid-area: h;
+  background-color: #d0f7d0;
+  position: relative;
+  display: grid;
+  text-align: center;
+}
+
+#title {
+  text-decoration: underline;
+  margin-top: 0.5rem;
+}
+
+/* Picture Right */
+
+.p1 {
+  grid-area: p1;
+  background-color: #c5ebc5;
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+}
+
+.img {
+  display: grid;
+
+  height: auto;
+  min-width: auto;
+  box-sizing: border-box;
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  border: 0;
+  object-fit: cover;
+}
+
+/* Name, Email, Age, Gender */
+
+.s1 {
+  grid-area: s1;
+  background: #b0d1b0;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  color: #b0d1b0;
+  object-fit: contain;
+  position: relative;
+}
+
+/* Fancy Form */
+
+.form-control {
+  background-color: #b0d1b0;
+  color: black;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+}
+
+.name-section {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.name-section input {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.name-section label {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+/* Email form */
+
+.email-section {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.email-section input {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.email-section label {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+/* Age Section */
+
+.age-section {
+  padding-left: 0.1rem;
+  width: 35%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.age-section input {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.age-section label {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  border-bottom: 1px solid black;
+}
+
+/* Gender Form */
+
+.gender-section {
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  border-radius: 20%;
+}
+
+#dropdown {
+  border-style: none;
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+#dropdown:focus {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+/* Vertical Picture */
+
+.p2 {
+  grid-area: p2;
+  background-color: #d0f7d0;
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.img2 {
+  display: grid;
+  height: auto;
+  min-width: auto;
+  box-sizing: border-box;
+  display: flex;
+
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  border: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* First question second part (Right Site)*/
+
+.s2 {
+  grid-area: s2;
+  background-color: #bad1ce;
+
+  display: block;
+  place-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  align-item: center;
+  padding-top: 1rem;
+}
+
+/* Answer first question */
+
+.sa {
+  grid-area: sa;
+  background-color: #bad1ce;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Yes / No Button */
+
+.switch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  margin: -30px 0 0 -75px;
+  background: #839492;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 25px;
+}
+.switch span {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  margin: -2px 0px 0px -4px;
+  background: #fff;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+.switch span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  margin-top: -8px;
+  background: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+input[type="radio"] {
+  display: none;
+}
+.switch label {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+  width: 60px;
+  line-height: 50px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+label[for="yes"] {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+}
+label[for="no"] {
+  position: absolute;
+  right: 0px;
+}
+#no:checked ~ .switch {
+  background: #cc9793;
+}
+#no:checked ~ .switch span {
+  background: #fff;
+  margin-left: -8px;
+}
+#no:checked ~ .switch span:after {
+  background: #fff;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+#yes:checked ~ .switch label[for="yes"] {
+  color: #fff;
+}
+#no:checked ~ .switch label[for="no"] {
+  color: #fff;
+}
+
+/* Long Survey */
+
+.sl {
+  grid-area: sl;
+  display: grid;
+  background-color: #839492;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 13% 87%;
+  grid-template-areas:
+    "q q"
+    "a b";
+}
+
+/*Survey Split into two with grid */
+
+.q {
+  grid-area: q;
+  background-color: #bad1ce;
+  place-items: center;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+}
+
+.q p {
+  margin-top: 1.5rem;
+}
+
+.a {
+  grid-area: a;
+  background-color: #bad1ce;
+  flex-direction: column;
+  display: block;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 0.2rem;
+  line-height: 1.2;
+}
+
+.b {
+  grid-area: b;
+  background-color: #bad1ce;
+  flex-direction: column;
+  display: block;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 0.2rem;
+  line-height: 1.2;
+}
+
+/* Checkboxes Design */
+
+.item {
+  align-self: stretch;
+  padding: 2rem 0;
+  text-align: center;
+}
+.item:not(:last-of-type) {
+  border-bottom: 1px solid #ccc;
+}
+.item h3 {
+  margin: 0 0 10px 0;
+  font-weight: normal;
+  font-size: 0.5rem;
+  color: #666;
+}
+
+.knob-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.light {
+  display: inline-block;
+  width: calc(calc(1rem / 2) / 2.5);
+  height: calc(calc(1rem / 2) / 2.5);
+  border-radius: 100%;
+  background-color: #ddd;
+  margin: 0 0 0 1rem;
+  box-shadow: 0 0 0 0.25rem #cacaca;
+  -webkit-transition: background 400ms ease;
+  transition: background 400ms ease;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: calc(1rem / 2);
+  background-color: #ddd;
+  border-radius: calc(1rem / 2);
+  outline: none;
+  -webkit-transition: background 450ms ease;
+  transition: background 450ms ease;
+  box-shadow: 0 0 0 3px #cacaca;
+}
+input[type="checkbox"]:before,
+input[type="checkbox"]:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-radius: 100%;
+  -webkit-transition: background 450ms ease, -webkit-transform 450ms ease;
+  transition: background 450ms ease, -webkit-transform 450ms ease;
+  transition: background 450ms ease, transform 450ms ease;
+  transition: background 450ms ease, transform 450ms ease,
+    -webkit-transform 450ms ease;
+}
+input[type="checkbox"]:before {
+  width: calc(1rem / 2);
+  height: calc(1rem / 2);
+  background-color: #cc9793;
+}
+input[type="checkbox"]:checked:before {
+  background-color: #43a047;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* Text Area and Submit*/
+
+.f {
+  grid-area: f;
+  background-color: #839492;
+  text-align: center;
+  display: block;
+}
+
+.f p {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.ui-form-input {
+  padding: 1.5rem 5rem;
+  border-radius: 8px;
+  border: 2px solid #5a6b5a;
+  outline: 0;
+  width: 50%;
+}
+
+.error .ui-form-input,
+.error .form-input-label {
+  border-color: #5a6b5a;
+  color: #5a6b5a;
+}
+
+textarea {
+  min-height: 6em;
+  max-height: 30vh;
+  width: 50%;
+  background-color: rgba(186, 209, 206, 0.4);
+}
+
+.submit-button {
+  display: block;
+  width: 80%;
+  padding: 0.4rem;
+  background: #bad1ce;
+  color: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.footer {
+  font-size: 0.5rem;
+}
+
+/* Text Autocomplete background color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form for FCC Web Certificate by @fskarmeta</title>
+</head>
+
+<body>
+    <main>
+        <form id="survey-form">
+            <div class="container">
+                <div class="m1"></div>
+                <div class="m2"></div>
+                <div class="m3"></div>
+                <div class="m4"></div>
+                <div class="h">
+                    <h1 id="title">Chilean National Park Survey</h1>
+                    <p id="description">Park Visits
+                    <p>
+                </div>
+                <div class="p1">
+                    <div class="img-div">
+                        <img src="https://images.pexels.com/photos/3521766/pexels-photo-3521766.jpeg"
+                            alt="forest picture" class="img" />
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="box">
+                        <div class="name-section">
+                            <label id="name-label" for="name">Name</label>
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Name"
+                                autocomplete="off" required />
+                        </div>
+                        <div class="email-section">
+                            <label id="email-label" for="email">Email</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email" id="email"
+                                autocomplete="off" required />
+                        </div>
+
+                        <div class="age-section">
+                            <label id="number-label" for="number">Age</label>
+                            <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                                placeholder="Age" />
+
+                        </div>
+
+
+                        <div class="gender-section">
+
+                            <select id="dropdown" name="gender" class="form-control" required>
+                                <option disabled selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="p2">
+                    <div class="img-div2">
+                        <img src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg" alt="forest picture"
+                            class="img2" />
+                    </div>
+                </div>
+                <div class="s2">
+                    <p>Have you visited a National Park in the last 2 years?</p>
+                </div>
+                <div class="sa">
+                    <input type="radio" name="rdo" id="yes" value="yes" checked />
+                    <input type="radio" name="rdo" id="no" value="no">
+                    <div class="switch">
+                        <label for="yes">Yes</label>
+                        <label for="no">No</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="sl">
+                    <div class="q">
+                        <p>
+                            If so, which of the following National Parks have you visited?
+                        </p>
+                    </div>
+                    <div class="a">
+                        <h3>Vicente Pérez Rosales</h3>
+                        <label>
+                            <input name="prefer" value="perez-rosales" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Archipiélago de Juan Fernandez</h3>
+                        <label>
+                            <input name="prefer" value="juanfernandez" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Rapa Nui</h3>
+                        <label>
+                            <input name="prefer" value="rapanui" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Tolhuaca</h3>
+                        <label>
+                            <input name="prefer" value="tolhuaca" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Nahuelbuta</h3>
+                        <label>
+                            <input name="prefer" value="Nahuelbuta" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Villarica</h3>
+                        <label>
+                            <input name="prefer" value="Villarrica" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Bosque Fray Jorge</h3>
+                        <label>
+                            <input name="prefer" value="FrayJorge" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Puyehue</h3>
+                        <label>
+                            <input name="prefer" value="Puyehue" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Cabo de Hornos</h3>
+                        <label>
+                            <input name="prefer" value="CabodeHornos" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Laguna del Laja</h3>
+                        <label>
+                            <input name="prefer" value="LagunadelLaja" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Laguna San Rafael</h3>
+                        <label>
+                            <input name="prefer" value="LagunaSanRafael" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Torres del Paine</h3>
+                        <label>
+                            <input name="prefer" value="TorresdelPaine" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Alberto de Agostini</h3>
+                        <label><input name="prefer" value="AlbertodeAgostini" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Huerquehue</h3>
+                        <label>
+                            <input name="prefer" value="Huerquehue" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Isla Guamblin</h3>
+                        <label>
+                            <input name="prefer" value="IslaGuamblin" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>La Campana</h3>
+                        <label>
+                            <input name="prefer" value="LaCampana" type="checkbox" class="input-checkbox" />
+                        </label>
+
+
+                        <h3>Volcán Isluga</h3>
+                        <label>
+                            <input name="prefer" value="VolcanIsluga" type="checkbox" class="input-checkbox" />
+                        </label>
+
+
+                        <h3>Bernanrdo O'Higgins</h3>
+                        <label>
+                            <input name="prefer" value="BernardooHiggins" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Laucan</h3>
+                        <label>
+                            <input name="prefer" value="Laucan" type="checkbox" class="input-checkbox" />
+                        </label>
+                        <h3>Cerro Castillo</h3>
+                        <label>
+                            <input name="prefer" value="CerroCastillo" type="checkbox" class="input-checkbox" />
+                        </label>
+
+
+
+                    </div>
+
+                    <!--- Clase B -->
+
+
+                    <div class="b">
+
+
+                        <h3>Pali Aike</h3>
+                        <label>
+                            <input name="prefer" value="PaliAike" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Radal Siete Tazas</h3>
+                        <label>
+                            <input name="prefer" value="RadalSieteTazas" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Alerce Andino</h3>
+                        <label>
+                            <input name="prefer" value="AlerceAndino" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Chiloé</h3>
+                        <label>
+                            <input name="prefer" value="Chiloe" type="checkbox" class="input-checkbox" />
+                        </label>
+
+
+                        <h3>Isla Magdalena</h3>
+                        <label>
+                            <input name="prefer" value="IslaMagdalena" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Queulat</h3>
+                        <label>
+                            <input name="prefer" value="Queulat" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Pan de Azúcar</h3>
+                        <label>
+                            <input name="prefer" value="PandeAzucar" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Conguillío</h3>
+                        <label>
+                            <input name="prefer" value="Conguillio" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Hornopirén</h3>
+                        <label>
+                            <input name="prefer" value="Hornopiren" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Las Palmas de Cocalán</h3>
+                        <label>
+                            <input name="prefer" value="laspalmas" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Llanos de Challe</h3>
+                        <label>
+                            <input name="prefer" value="llanosdechalle" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Nevado Tres Cruces</h3>
+                        <label>
+                            <input name="prefer" value="nevadotrescruces" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Llullaillaco</h3>
+                        <label>
+                            <input name="prefer" value="Llullaillaco" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Corcovado</h3>
+                        <label>
+                            <input name="prefer" value="Corcovado" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Alerce Costero</h3>
+                        <label>
+                            <input name="prefer" value="AlerceCostero" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Morro Moreno</h3>
+                        <label>
+                            <input name="prefer" value="MorroMoreno" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Yendegaia</h3>
+                        <label>
+                            <input name="prefer" value="Yendegaia" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Pumalín</h3>
+                        <label>
+                            <input name="prefer" value="Pumalín" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Patagonia</h3>
+                        <label>
+                            <input name="prefer" value="Patagonia" type="checkbox" class="input-checkbox" />
+                        </label>
+
+                        <h3>Kewésqar</h3>
+                        <label>
+                            <input name="prefer" value="Kawesqar" type="checkbox" class="input-checkbox" />
+                        </label>
+                    </div>
+
+                </div>
+                <div class="f">
+                    <div class="ui-input-container">
+                        <p>Leave us a message</p>
+                        <label class="ui-form-input-container">
+                            <textarea class="ui-form-input"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit National Park Survey
+                    </button>
+                    <p class="footer">&copy; Bafian 2020 &#124; Survey Form for <a href="https://freecodecamp.org"
+                            style="color:red">FCC</a> Web Dev Certificate</p>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+</html>
+</body>
+
+</html>

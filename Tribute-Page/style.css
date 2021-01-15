@@ -1,0 +1,269 @@
+:root {
+  font: 20px/1.2 "Mulish", sans-serif;
+}
+
+body,
+body * {
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+/* GRID INFORMATION */
+
+.container {
+  height: 100%;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 5% 20% 50% 20% 5%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "m m2 h m3 m4"
+    "m p p p m4"
+    "m c c d m4"
+    "f f f f f";
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: 100%;
+    display: grid;
+    box-sizing: border-box;
+    gap: 0px;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "m h m4"
+      "m p m4"
+      "m c m4"
+      "m d m4"
+      "m f m4";
+  }
+}
+
+/* MARGINS COLORS */
+
+.MarginA {
+  grid-area: m;
+  background: #dff7ff;
+}
+
+.MarginB {
+  grid-area: m2;
+  background: rgb(223, 247, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 247, 255, 1) 0%,
+    rgba(242, 224, 255, 1) 94%,
+    rgba(225, 244, 255, 1) 100%
+  );
+}
+
+.MarginC {
+  grid-area: m3;
+  background: rgb(223, 247, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 247, 255, 1) 0%,
+    rgba(242, 224, 255, 1) 94%,
+    rgba(225, 244, 255, 1) 100%
+  );
+}
+
+.MarginD {
+  grid-area: m4;
+  background: #dff7ff;
+}
+
+/* HEADING INFORMATION */
+
+.head {
+  grid-area: h;
+  text-align: center;
+  line-height: 1.5;
+  background: rgb(223, 247, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 247, 255, 1) 0%,
+    rgba(242, 224, 255, 1) 94%,
+    rgba(225, 244, 255, 1) 100%
+  );
+}
+
+.head h1 {
+  font-size: 4.5em;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.head p {
+  font-size: 1.5rem;
+  font-style: oblique;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+/* HEADING PICTURE INFO */
+
+.picture {
+  grid-area: p;
+  background: #dff7ff;
+  text-align: center;
+}
+
+.img-div {
+  width: auto;
+  height: auto;
+}
+
+#image {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 70em;
+  max-width: 100%;
+  height: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-caption {
+  font-size: 1.5rem;
+  font-style: italic;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+/* HISTORY INFORMATION */
+
+#tribute-info {
+  grid-area: c;
+  background: rgb(243, 223, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(243, 223, 255, 1) 93%,
+    rgba(223, 247, 255, 1) 98%
+  );
+}
+
+.headline {
+  margin: 1rem 3rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 1rem 1 rem 1rem 3rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+li {
+  margin: 1rem 3rem;
+}
+
+#tribute-link {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#tribute-link:hover {
+  color: red;
+}
+
+@media (max-width: 900px) {
+  #tribute-info ul {
+    font-size: 0.8rem;
+  }
+}
+
+/* DISCOGRAPHY INFO */
+
+.disco {
+  grid-area: d;
+  font-size: 0.2rem;
+  text-align: center;
+  background: rgb(255, 241, 223);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 241, 223, 1) 93%,
+    rgba(223, 247, 255, 1) 98%
+  );
+}
+
+.discoheadline {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 2.3rem;
+}
+
+.disco h2 {
+  font-size: 1rem;
+}
+
+.disco li {
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+.disco img {
+  width: 40%;
+  height: auto;
+  max-width: 100px;
+  transition: transform 0.2s;
+}
+
+.disco li:hover {
+  font-weight: bold;
+}
+
+.disco img:hover {
+  transform: scale(2);
+}
+
+@media (max-width: 900px) {
+  .footer a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer p {
+    font-size: 0.4rem;
+  }
+}
+
+/* FOOTER INFO */
+
+.footer {
+  grid-area: f;
+  background: #dff7ff;
+  text-align: center;
+}
+
+.footer p {
+  font-style: normal;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .footer a {
+    font-size: 0.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer p {
+    font-size: 0.4rem;
+  }
+}
