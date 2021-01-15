@@ -1,13 +1,13 @@
-## FCC Web Development Certificate
+# FCC Web Development Certificate
 
 # A repo for the projects I did back in August 2020
 
-This repo consists of 4 of the 5 projects, the missing one -and my favorite one of the series- you can find on
+This repo consists of 4 of the 5 projects, the missing one -and my favorite one of the series- you can find at
 https://github.com/fskarmeta/fcc-technical-documentation-page .
 
 This was my first ever aproach to html and css.
 
-#Content:
+#C ontent:
 
 Survey
 
