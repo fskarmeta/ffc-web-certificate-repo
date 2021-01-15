@@ -7,7 +7,9 @@ https://github.com/fskarmeta/fcc-technical-documentation-page .
 
 This was my first ever aproach to html and css.
 
-#C ontent:
+I also added a excuse generator, not from this certificate series, but I didn't want to create a hole repo for it alone.
+
+# Content:
 
 Survey
 
@@ -24,3 +26,7 @@ Product Landing Page
 Portafolio
 
 ![Alt Text](./Portafolio/gif.gif)
+
+Excuse Generator
+
+![Alt Text](./Excuse-generator/gif.gif)
